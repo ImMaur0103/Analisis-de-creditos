@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    
+    {{#if customCSS}}
+        {{#each customCSS}}
+            <link rel="stylesheet" href="{{this}}">
+        {{/each}}
+    {{else}}
+        <link rel="stylesheet" href="/css/styles.css">
+    {{/if}}
+
+    {{#if additionalCSS}}
+        {{#each additionalCSS}}
+            <link rel="stylesheet" href="{{this}}">
+        {{/each}}
+    {{/if}}
+</head>
+<body>
+    <div class="page-container">
+        <div class="content-wrap">
+            {{#if Navbar}}
+                {{> navbar}}
+            {{/if}}
+
+            <div class="container">
+                {{{body}}}
+            </div>
+        </div>
+
+        {{#if Footer}}
+            {{> Footer}}
+        {{/if}}
+    </div>
+
+    {{#if customJS}}
+        {{#each customJS}}
+            <script src="{{this}}"></script>
+        {{/each}}
+    {{else}}
+        <script src="/js/main.js"></script>
+    {{/if}}
+
+    {{#if additionalJS}}
+        {{#each additionalJS}}
+            <script src="{{this}}"></script>
+        {{/each}}
+    {{/if}}
+</body>
+</html>

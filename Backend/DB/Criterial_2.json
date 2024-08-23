@@ -1,0 +1,226 @@
+{
+    "Family_Funding": {
+        "min_deposits": 2,
+        "avg_revenue": 20000,
+        "min_revenue_month": 15000,
+        "ods_returns": 10,
+        "accepts_recovery": true,
+        "last_default": "6 Months",
+        "negative_days": 5,
+        "low_days": 7,
+        "bounced_mcas": 2,
+        "restricted_states": [
+            "Puerto Rico"
+        ],
+        "start_date": "No",
+        "soleprop": "Yes",
+        "trucking_construction": 50000
+    },
+    "Cashium": {
+        "min_deposits": 2,
+        "avg_revenue": 20000,
+        "min_revenue_month": 10000,
+        "ods_returns": 10,
+        "accepts_recovery": false,
+        "last_default": "1 Year",
+        "negative_days": 5,
+        "low_days": 7,
+        "bounced_mcas": 5,
+        "restricted_states": [
+            "Puerto Rico",
+            "Hawaii"
+        ],
+        "restricted_industries": [
+            "Law firms",
+            "Debt consolidation services",
+            "Other funding/Loan related institutions"
+        ],
+        "start_date": "6 months",
+        "soleprop": "No",
+        "trucking_construction": 100000
+    },
+    "Pathway": {
+        "min_deposits": 2,
+        "avg_revenue": 20000,
+        "min_revenue_month": 15000,
+        "ods_returns": 10,
+        "accepts_recovery": false,
+        "last_default": "1 year",
+        "negative_days": 5,
+        "low_days": 7,
+        "bounced_mcas": 2,
+        "restricted_industries": [
+            "Debt consolidation services",
+            "Other funding/Loan related institutions",
+            "Law Firm"
+        ],
+        "start_date": "1 year",
+        "soleprop": "Yes",
+        "trucking_construction": 100000
+    },
+    "Pinnacle": {
+        "min_deposits": 2,
+        "avg_revenue": 20000,
+        "min_revenue_month": 15000,
+        "ods_returns": 10,
+        "accepts_recovery": false,
+        "last_default": "1 year",
+        "negative_days": 5,
+        "low_days": 7,
+        "bounced_mcas": 5,
+        "restricted_states": [
+            "Utah",
+            "Puerto Rico",
+            "Hawaii"
+        ],
+        "restricted_industries": [
+            "Law firms",
+            "Debt consolidation services",
+            "Other funding/Loan related institutions"
+        ],
+        "start_date": "1 year",
+        "soleprop": "Yes",
+        "trucking_construction": 100000
+    },
+    "Cashfloit": {
+        "min_deposits": 8,
+        "avg_revenue": 35000,
+        "min_revenue_month": 20000,
+        "ods_returns": 10,
+        "accepts_recovery": false,
+        "last_default": "3 years",
+        "negative_days": 3,
+        "low_days": 7,
+        "bounced_mcas": 2,
+        "restricted_states": [
+            "California",
+            "Alaska",
+            "Puerto Rico",
+            "Hawaii",
+            "New York",
+            "Utah",
+            "Virginia"
+        ],
+        "restricted_industries": [
+            "Law firms",
+            "Debt consolidation services",
+            "Other funding/Loan related institutions",
+            "Real estate",
+            "Cannabis",
+            "Auto sales"
+        ],
+        "start_date": "1 year",
+        "soleprop": "Only if it's a business account",
+        "trucking_construction": 100000
+    },
+    "HFH": {
+        "min_deposits": 2,
+        "avg_revenue": 20000,
+        "min_revenue_month": 15000,
+        "ods_returns": 10,
+        "accepts_recovery": false,
+        "last_default": "1 year",
+        "negative_days": 5,
+        "low_days": 7,
+        "bounced_mcas": 2,
+        "restricted_industries": [
+            "Debt consolidation services",
+            "Other funding/Loan related institutions"
+        ],
+        "start_date": "1 year",
+        "trucking_construction": "3 Trucks"
+    },
+    "Bow_Apple_Capital": {
+        "min_deposits": 3,
+        "avg_revenue": 50000,
+        "min_revenue_month": "As long as avg is 50k",
+        "ods_returns": 7,
+        "accepts_recovery": false,
+        "last_default": "1 year if open",
+        "negative_days": 7,
+        "low_days": 7,
+        "bounced_mcas": 1,
+        "restricted_states": [
+            "California"
+        ],
+        "restricted_industries": [
+            "Debt consolidation services",
+            "Other funding/Loan related institutions"
+        ],
+        "law_firms": "ONLY FUND PERSONAL INJURY LAW FIRMS",
+        "start_date": "1 year",
+        "soleprop": "Bring it up as a note",
+        "trucking_construction": 100000
+    },
+    "American_Choice": {
+        "min_deposits": 2,
+        "avg_revenue": 20000,
+        "min_revenue_month": 20000,
+        "ods_returns": 5,
+        "accepts_recovery": false,
+        "last_default": "Anytime",
+        "negative_days": 5,
+        "low_days": 5,
+        "bounced_mcas": 2,
+        "restricted_states": [
+            "Virginia",
+            "Utah"
+        ],
+        "restricted_industries": [
+            "Debt consolidation services",
+            "Other funding/Loan related institutions"
+        ],
+        "law_firms": "ONLY FUND PERSONAL INJURY LAW FIRMS",
+        "start_date": "No",
+        "soleprop": "Yes",
+        "trucking_construction": 100000
+    },
+    "Nitro_Timeless": {
+        "min_deposits": 3,
+        "avg_revenue": 20000,
+        "min_revenue_month": 15000,
+        "ods_returns": 10,
+        "accepts_recovery": true,
+        "last_default": "3 months if open",
+        "negative_days": {
+            "last_month": 7,
+            "previous_month": 10
+        },
+        "low_days": {
+            "last_month": 7,
+            "previous_month": 10
+        },
+        "bounced_mcas": {
+            "min": 4,
+            "max": 5
+        },
+        "restricted_industries": [
+            "Debt consolidation services",
+            "Other funding/Loan related institutions",
+            "Law firm"   
+        ],
+        "start_date": "No",
+        "soleprop": "Yes"
+    },
+    "Citrus": {
+        "min_deposits": 3,
+        "avg_revenue": 20000,
+        "min_revenue_month": 15000,
+        "ods_returns": 10,
+        "accepts_recovery": true,
+        "last_default": "3 months if open",
+        "negative_days": 5,
+        "low_days": 5,
+        "bounced_mcas": {
+            "min": 4,
+            "max": 5
+        },
+        "restricted_industries": [
+            "Debt consolidation services",
+            "Other funding/Loan related institutions",
+            "Law firm"
+        ],
+        "start_date": "No",
+        "soleprop": "Yes"
+    }
+}

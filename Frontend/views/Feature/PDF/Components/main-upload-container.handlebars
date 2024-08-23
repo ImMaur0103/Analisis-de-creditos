@@ -1,0 +1,20 @@
+<main class="main-container-upload">
+    {{> upload-section 
+        title="Aplicacion de credito"
+        textId="Applicacion"
+        uploadText="Inserta PDF: Aplicacion de credito"
+        fileListId="file-list-application"
+        uploadButtonId="file-upload-application"
+        uploadButtonLabel="Upload PDF"
+    }}
+    {{> upload-section 
+        title="Estados de cuenta"
+        textId="EstadoCuenta"
+        uploadText="Inserta PDF's: Estados de cuenta"
+        fileListId="file-list-history"
+        uploadButtonId="file-upload-history"
+        uploadButtonLabel="Upload PDF"
+        multiple=true
+    }}
+    <button class="send-button">Analize PDF's</button>
+</main>

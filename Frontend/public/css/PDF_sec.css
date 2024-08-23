@@ -1,0 +1,230 @@
+:root{
+    --color-PDF : #dc2626;
+    --color-triangle: #b91c1c;
+    --color-border: #fff;
+}
+
+.container {
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: center;
+}
+
+.content {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: space-around;
+    padding        : 1rem;
+}
+
+.upload-section {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    margin-bottom : 1rem;
+}
+
+.file-input {
+    display: none;
+}
+.send-button {
+    background-color: var(--color-secondary);
+    color           : #ffffff;
+    padding         : 0.5rem 1rem;
+    border-radius   : 0.5rem;
+    border          : none;
+    cursor          : pointer;
+    transition      : background-color 0.2s;
+}
+.upload-button {
+    background-color: var(--color-secondary);
+    color           : #ffffff;
+    padding         : 0.5rem 1rem;
+    border-radius   : 0.5rem;
+    border          : none;
+    cursor          : pointer;
+    transition      : background-color 0.2s;
+}
+
+.upload-button:hover {
+    background-color: var(--color-primary);
+}
+
+.supported-format {
+    font-size : 0.875rem;
+    color     : var(--color-light);
+    margin-top: 0.5rem;
+}
+
+.pdf-info {
+    background-color: #ffffff;
+    margin          : 1rem;
+    padding         : 1rem;
+    border-radius   : 0.5rem;
+    box-shadow      : 20px 18px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-title {
+    font-size    : 1.125rem;
+    font-weight  : bold;
+    color        : var(--color-darkest);
+    margin-bottom: 0.5rem;
+}
+
+.pdf-description {
+    font-size: 0.875rem;
+    color    : var(--color-dark);
+}
+
+.main-container-upload,
+.main-container-download {
+    padding: 2rem;
+    display: flex;
+    gap    : 1rem;
+}
+
+.main-container-upload {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.main-container-download {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-container-upload .section-container {
+    width : 700px;
+    height: 290px;
+}
+
+.main-container-download .section-container {
+    width : 370px;
+    height: 596px;
+}
+
+.section-container {
+    background-color: #d4d4d8;
+    padding         : 1rem;
+    border-radius   : 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    text-align   : center;
+    font-size    : 1.125rem;
+    font-weight  : bold;
+    color        : var(--color-darkest);
+    margin-bottom: 0.5rem;
+}
+
+.upload-container {
+    background-color: white;
+    height: 80%;
+    padding         : 1rem;
+    margin-bottom   : 1rem;
+    border-radius   : 0.5rem;
+    box-shadow      : 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.upload-text {
+    margin-bottom: 1rem;
+}
+
+.section-container .upload {
+    align-self: baseline;
+    display: inline-block;
+}
+
+.pdf-container {
+    background-color: #ef4444;
+    padding         : 1rem;
+    margin-bottom   : 1rem;
+    border-radius   : 0.5rem;
+    box-shadow      : 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-text {
+    color: white;
+}
+
+.approval-text {
+    margin-bottom: 1rem;
+}
+
+.details-text {
+    white-space: pre-line;
+}
+
+.upload-container {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.file-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.file-item {
+    position: relative;
+    background-color: var(--color-PDF);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-darkest);
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 125px;
+    overflow: hidden;
+}
+.triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-triangle, #b91c1c);
+    border-top-right-radius: 0.25rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    border: 2px solid var(--color-border, #ffffff);
+    border-left: none;
+    border-bottom: none;
+}
+
+.file-icon {
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.file-name {
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .feature-item {
+        flex: 0 0 250px;
+    }
+    .main-container-upload .section-container {
+        width : 60%;
+        height: 290px;
+    }
+    
+    .main-container-download .section-container {
+        width : 90%;
+        height: 596px;
+    }
+}

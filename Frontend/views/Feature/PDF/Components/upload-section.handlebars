@@ -1,0 +1,13 @@
+<section class="section-container">
+    <h2 class="section-title">{{title}}</h2>
+    <div class="upload-container">
+        <p class="upload-text" id="{{textId}}">{{uploadText}}</p>
+        <div class="file-list" id="{{fileListId}}"></div>
+    </div>
+    <div class="upload">
+        <label for="{{uploadButtonId}}" class="upload-button">
+            {{uploadButtonLabel}}
+            <input id="{{uploadButtonId}}" type="file" accept=".pdf" {{#if multiple}}multiple{{/if}} class="file-input">
+        </label>
+    </div>
+</section>

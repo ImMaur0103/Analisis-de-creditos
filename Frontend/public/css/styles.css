@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-primary  : #00e2ff;
+  /* Azul primario */
+  --color-secondary: #3b92b0;
+  /* Azul secundario */
+  --color-dark     : #2a2f3d;
+  /* Azul oscuro */
+  --color-light    : #c1c1c1;
+  /* Gris claro */
+  --color-darkest  : #212121;
+  /* Gris oscuro */
+
+  /* Colores adicionales sugeridos */
+  --color-gray     : #808080;
+  /* Gris neutro */
+  --color-brown    : #b08c5b;
+  /* Marrón */
+  --color-green    : #3caea3;
+  /* Verde */
+  --color-blue-dark: #1f618d;
+  /* Azul oscuro */
+}
+
+* {
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*----------------------------------------------------------------*/
+body {
+  height          : 100%;
+  width           : 100%;
+  margin          : 0;
+  margin          : 0;
+  padding         : 0;
+  background-color: var(--color-dark);
+  background      : linear-gradient(to right, var(--color-secondary), var(--color-dark));
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1 0 auto;
+}
+
+.container {
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-around;
+}
+
+.navbar {
+  background-color: var(--color-darkest);
+  padding         : 1rem;
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+}
+
+.logo-image {
+  height: 50px;
+  width : 134.0236686390533px;
+}
+
+.nav-links {
+  display   : flex;
+  list-style: none;
+  margin    : 0;
+  padding   : 0;
+}
+
+.nav-link {
+  color          : var(--color-light);
+  text-decoration: none;
+  margin-left    : 1rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color          : var(--color-secondary);
+}
+
+
+.footer {
+  background-color: var(--color-light);
+  color           : var(--color-darkest);
+  padding         : 1.5rem;
+  text-align      : center;
+}
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+.footer-link {
+  color          : var(--primary);
+  margin         : 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--color-secondary);
+}
+
+/*----------------------------------------------------------------*/
+
+
+@media (max-width: 768px) {
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+  }
+  .navbar {
+    background-color: var(--color-darkest);
+    justify-content : start;
+    flex-wrap: wrap;
+    align-items     : start;
+    width           : 100vw;
+  }
+  body {
+    height          : auto;
+    width           : auto;
+    margin          : 0;
+    margin          : 0;
+    padding         : 0;
+    background-color: var(--color-dark);
+    background      : linear-gradient(to right, var(--color-secondary), var(--color-dark));
+  }
+}

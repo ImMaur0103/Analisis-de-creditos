@@ -1,0 +1,252 @@
+{
+    "account_info": {
+        "patterns": [
+            "Account number: [\\d+|\\s?]+",
+            "Account Number: \\d+",
+            "Primary Account: \\d+"
+        ]
+    },
+    "date_range": {
+        "patterns": [
+            "(?:January|February|March|April|May|June|July|August|September|October|November|December) \\d{1,2}, \\d{4} (?:through|to) (?:January|February|March|April|May|June|July|August|September|October|November|December) \\d{1,2}, \\d{4}",
+            "For \\d{2}/\\d{2}/\\d{4}"
+        ]
+    },
+    "account_summary": {
+        "fields": [
+            "Beginning balance",
+            "Ending balance",
+            "Deposits/Credits",
+            "Withdrawals/Debits",
+            "Fees"
+        ]
+    },
+    "transactions": {
+        "headers": [
+            "Date",
+            "Description",
+            "Amount",
+            "Deposits/Credits",
+            "Withdrawals/Debits"
+        ],
+        "patterns": [
+            "((\\d{2}/\\d{2}/\\d{4})|(\\d{2}/\\d{2}/\\d{2})|(\\d{2}/\\d{2})|(\\d{1,2}\\s+[A-Za-z]{3}\\s+\\d{4}))\\s+(\\S+\\s{1}\\S+)\\s+(-?[\\$]?[\\d,]+\\.\\d{1,4})$"
+        ]
+    },
+    "deposits": {
+        "keywords": [
+            "Deposits and other credits",
+            "credit",
+            "transfer from",
+            "zelle payment from"
+        ],
+        "analysis": {
+            "_Comentarios_": "Compara con los rangos en 'deposits.analysis' para verificar si cumple con los requisitos mínimos.",
+            "min_deposits": {
+                "description": "Minimum number of deposits per month",
+                "range": [
+                    2,
+                    8
+                ]
+            },
+            "avg_revenue": {
+                "description": "Average monthly revenue",
+                "range": [
+                    20000,
+                    50000
+                ]
+            }
+        }
+    },
+    "withdrawals": {
+        "keywords": [
+            "Withdrawals and other debits",
+            "debit",
+            "transfer to",
+            "zelle payment to",
+            "purchase",
+            "payment"
+        ]
+    },
+    "fees": {
+        "keywords": [
+            "fee",
+            "charge",
+            "service charge"
+        ]
+    },
+    "balance_summary": {
+        "keywords": [
+            "daily balance",
+            "ending balance"
+        ]
+    },
+    "account_health": {
+        "_Comentarios_": "Usa 'account_health' para verificar: Número de sobregiros o devoluciones, Días con saldo negativo, Días con saldo bajo, Pagos de MCA rebotados, Compara con los rangos máximos permitidos.",
+        "overdrafts": {
+            "description": "Number of overdrafts or returns",
+            "max_allowed": {
+                "range": [
+                    5,
+                    10
+                ]
+            }
+        },
+        "negative_days": {
+            "description": "Number of days with negative balance",
+            "max_allowed": {
+                "range": [
+                    3,
+                    5
+                ]
+            }
+        },
+        "low_balance_days": {
+            "description": "Number of days with low balance",
+            "max_allowed": {
+                "range": [
+                    5,
+                    7
+                ]
+            }
+        },
+        "bounced_mca_payments": {
+            "description": "Number of bounced MCA payments",
+            "max_allowed": {
+                "range": [
+                    1,
+                    5
+                ]
+            }
+        }
+    },
+    "business_info": {
+        "fields": [
+            "Business name",
+            "DBA",
+            "Tax ID",
+            "Legal entity",
+            "Business start date",
+            "State",
+            "Industry"
+        ],
+        "criteria": {
+            "min_business_age": {
+                "description": "Minimum business age",
+                "range": [
+                    "6 months",
+                    "3 years"
+                ]
+            },
+            "ownership_percentage": {
+                "description": "Minimum ownership percentage",
+                "value": 50
+            },
+            "restricted_states": [
+                "PR",
+                "HI",
+                "CA",
+                "AK",
+                "NY",
+                "UT",
+                "VA"
+            ],
+            "restricted_industries": [
+                "Law firms",
+                "Debt consolidation services",
+                "Other funding/Loan related institutions",
+                "Real estate",
+                "Cannabis",
+                "Auto sales"
+            ],
+            "sole_proprietorship": {
+                "description": "Acceptance of sole proprietorship",
+                "conditions": [
+                    "Only if it's a business account",
+                    "No",
+                    "Yes"
+                ]
+            },
+            "trucking_construction": {
+                "description": "Special conditions for trucking/construction businesses",
+                "conditions": [
+                    "Bring it up as a note",
+                    "Send AR",
+                    "3 Trucks minimum"
+                ]
+            }
+        }
+    },
+    "background_check": {
+        "sources": [
+            "NYSCEF",
+            "DataMerch"
+        ],
+        "criteria": {
+            "last_default": {
+                "description": "Time since last default",
+                "range": [
+                    "3 months",
+                    "3 years"
+                ]
+            },
+            "open_default": {
+                "description": "Acceptance of open defaults",
+                "values": [
+                    "No",
+                    "Yes"
+                ]
+            }
+        }
+    },
+    "funding_criteria": {
+        "min_offer": {
+            "description": "Minimum offer amount",
+            "value": 20000
+        },
+        "leverage": {
+            "description": "Maximum leverage",
+            "value": 40
+        },
+        "mca_history": {
+            "description": "Acceptance of MCA history",
+            "value": "No"
+        },
+        "min_revenue_per_month": {
+            "description": "Minimum revenue per month",
+            "range": [
+                10000,
+                20000
+            ]
+        }
+    },
+    "document_requirements": {
+        "bank_statements": {
+            "min_months": 3,
+            "special_cases": {
+                "NY_businesses": 4
+            }
+        }
+    },
+    "process_info": {
+        "response_time": {
+            "description": "Maximum response time",
+            "value": "7 minutes"
+        }
+    },
+    "excluded_accounts": [
+        "Chime",
+        "Square",
+        "Bluevine",
+        "Novo",
+        "Mercury",
+        "Shopify",
+        "Intuit Quickbooks"
+    ],
+    "accepted_accounts": [
+        "Brex"
+    ],
+    "special_cases": [
+        "Relay"
+    ]
+}

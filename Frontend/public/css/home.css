@@ -1,0 +1,95 @@
+.hero-section {
+    position: relative;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    padding: 60px;
+  }
+  
+  .hero-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .hero-subtitle {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+  }
+  .features-grid {
+    overflow: hidden;
+    position: relative;
+    cursor: grab;
+    padding: 2rem;
+    width: 100%;
+}
+
+.features-grid:active {
+    cursor: grabbing;
+}
+
+.features-carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.feature-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    flex: 0 0 300px; /* Añade esto */
+    margin-right: 1rem; /* Añade esto */
+}
+.feature-icon {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    width: 60px;
+    height: 60px;
+  }
+.feature-item {
+    width: 100%; /* Cambia flex por width */
+    height: 100%; /* Asegura que ocupe todo el alto del contenedor */
+    margin-right: 1rem;
+    background-color: var(--color-primary);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-carousel > .feature-item {
+    flex: 0 0 300px;
+    margin-right: 1rem;
+}
+
+
+.feature-link:hover .feature-item,
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .feature-item {
+        flex: 0 0 250px;
+    }
+}
+
+/* Ajusta la animación para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .feature-item {
+        flex: 0 0 250px; /* Ajusta el ancho para pantallas pequeñas */
+    }
+}

@@ -1,0 +1,37 @@
+<main class="main-container">
+    <div class="criteria-container">
+        <h2 class="criteria-title">Criteria List</h2>
+        <ul class="criteria-list">
+            {{#each Criteria_list}}
+                <li class="criteria-item">
+                    <span class="criteria-name">{{@key}}</span>
+                    <button class="expand-button" data-section="{{@key}}">Expand</button>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{#each Criteria_list}}
+        <div id="{{@key}}-container" class="criteria-container" style="display: none;">
+            <div id="{{@key}}-details" class="criteria-details" style="display: none;">
+                <ul>
+                    {{#each this}}
+                        <li class="criteria-item">
+                            <strong>{{@key}}:</strong>
+                            {{#if (isObject this)}}
+                                <ul>
+                                    {{#each this}}
+                                        <li><strong>{{@key}}:</strong> {{this}}</li>
+                                    {{/each}}
+                                </ul>
+                                        <button class="edit-button" id="{{@key}}-edit">Edit</button>
+                            {{else}}
+                                {{this}}
+                                <button class="edit-button" id="{{@key}}-edit">Edit</button>
+                            {{/if}}
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    {{/each}}
+</main>

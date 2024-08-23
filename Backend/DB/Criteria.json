@@ -1,0 +1,557 @@
+{
+    "decline_criteria": {
+        "funder_deposits": 7,
+        "revenue": {
+            "avg_monthly": 35000,
+            "min_monthly": 20000
+        },
+        "overdrafts_returns": 10,
+        "recovery_last_month": false,
+        "default_negative_days": 3,
+        "low_days": 5,
+        "bounced_payments": 2,
+        "restricted_states": [
+            "Alaska",
+            "Puerto Rico",
+            "Hawaii",
+            "New York",
+            "Utah",
+            "Virginia"
+        ],
+        "restricted_industries": [
+            "Law firms",
+            "Debt consolidation services",
+            "Other funding/Loan related institutions",
+            "Real estate",
+            "Cannabis",
+            "Auto sales",
+            "Gas Stations",
+            "Crypto"
+        ],
+        "business_start_date": "1 year",
+        "sole_proprietorship": "Only if it's a business account",
+        "trucking_construction_remodeling": {
+            "monthly_revenue": 100000
+        }
+    },
+    "Client_specific_criteria": {
+        "Family_Funding": {
+            "min_deposits": 2,
+            "avg_revenue": 20000,
+            "min_revenue_month": 15000,
+            "ods_returns": 10,
+            "accepts_recovery": true,
+            "last_default": "6 Months",
+            "negative_days": 5,
+            "low_days": 7,
+            "bounced_mcas": 2,
+            "restricted_states": [
+                "Puerto Rico"
+            ],
+            "start_date": "No",
+            "soleprop": "Yes",
+            "trucking_construction": 50000
+        },
+        "Cashium": {
+            "min_deposits": 2,
+            "avg_revenue": 20000,
+            "min_revenue_month": 10000,
+            "ods_returns": 10,
+            "accepts_recovery": false,
+            "last_default": "1 Year",
+            "negative_days": 5,
+            "low_days": 7,
+            "bounced_mcas": 5,
+            "restricted_states": [
+                "Puerto Rico",
+                "Hawaii"
+            ],
+            "restricted_industries": [
+                "Law firms",
+                "Debt consolidation services",
+                "Other funding/Loan related institutions"
+            ],
+            "start_date": "6 months",
+            "soleprop": "No",
+            "trucking_construction": 100000
+        },
+        "Pathway": {
+            "min_deposits": 2,
+            "avg_revenue": 20000,
+            "min_revenue_month": 15000,
+            "ods_returns": 10,
+            "accepts_recovery": false,
+            "last_default": "1 year",
+            "negative_days": 5,
+            "low_days": 7,
+            "bounced_mcas": 2,
+            "restricted_industries": [
+                "Debt consolidation services",
+                "Other funding/Loan related institutions",
+                "Law Firm"
+            ],
+            "start_date": "1 year",
+            "soleprop": "Yes",
+            "trucking_construction": 100000
+        },
+        "Pinnacle": {
+            "min_deposits": 2,
+            "avg_revenue": 20000,
+            "min_revenue_month": 15000,
+            "ods_returns": 10,
+            "accepts_recovery": false,
+            "last_default": "1 year",
+            "negative_days": 5,
+            "low_days": 7,
+            "bounced_mcas": 5,
+            "restricted_states": [
+                "Utah",
+                "Puerto Rico",
+                "Hawaii"
+            ],
+            "restricted_industries": [
+                "Law firms",
+                "Debt consolidation services",
+                "Other funding/Loan related institutions"
+            ],
+            "start_date": "1 year",
+            "soleprop": "Yes",
+            "trucking_construction": 100000
+        },
+        "Cashfloit": {
+            "min_deposits": 8,
+            "avg_revenue": 35000,
+            "min_revenue_month": 20000,
+            "ods_returns": 10,
+            "accepts_recovery": false,
+            "last_default": "3 years",
+            "negative_days": 3,
+            "low_days": 7,
+            "bounced_mcas": 2,
+            "restricted_states": [
+                "California",
+                "Alaska",
+                "Puerto Rico",
+                "Hawaii",
+                "New York",
+                "Utah",
+                "Virginia"
+            ],
+            "restricted_industries": [
+                "Law firms",
+                "Debt consolidation services",
+                "Other funding/Loan related institutions",
+                "Real estate",
+                "Cannabis",
+                "Auto sales"
+            ],
+            "start_date": "1 year",
+            "soleprop": "Only if it's a business account",
+            "trucking_construction": 100000
+        },
+        "HFH": {
+            "min_deposits": 2,
+            "avg_revenue": 20000,
+            "min_revenue_month": 15000,
+            "ods_returns": 10,
+            "accepts_recovery": false,
+            "last_default": "1 year",
+            "negative_days": 5,
+            "low_days": 7,
+            "bounced_mcas": 2,
+            "restricted_industries": [
+                "Debt consolidation services",
+                "Other funding/Loan related institutions"
+            ],
+            "start_date": "1 year",
+            "trucking_construction": "3 Trucks"
+        },
+        "Bow_Apple_Capital": {
+            "min_deposits": 3,
+            "avg_revenue": 50000,
+            "min_revenue_month": "As long as avg is 50k",
+            "ods_returns": 7,
+            "accepts_recovery": false,
+            "last_default": "1 year if open",
+            "negative_days": 7,
+            "low_days": 7,
+            "bounced_mcas": 1,
+            "restricted_states": [
+                "California"
+            ],
+            "restricted_industries": [
+                "Debt consolidation services",
+                "Other funding/Loan related institutions"
+            ],
+            "law_firms": "ONLY FUND PERSONAL INJURY LAW FIRMS",
+            "start_date": "1 year",
+            "soleprop": "Bring it up as a note",
+            "trucking_construction": 100000
+        },
+        "American_Choice": {
+            "min_deposits": 2,
+            "avg_revenue": 20000,
+            "min_revenue_month": 20000,
+            "ods_returns": 5,
+            "accepts_recovery": false,
+            "last_default": "Anytime",
+            "negative_days": 5,
+            "low_days": 5,
+            "bounced_mcas": 2,
+            "restricted_states": [
+                "Virginia",
+                "Utah"
+            ],
+            "restricted_industries": [
+                "Debt consolidation services",
+                "Other funding/Loan related institutions"
+            ],
+            "law_firms": "ONLY FUND PERSONAL INJURY LAW FIRMS",
+            "start_date": "No",
+            "soleprop": "Yes",
+            "trucking_construction": 100000
+        },
+        "Nitro_Timeless": {
+            "min_deposits": 3,
+            "avg_revenue": 20000,
+            "min_revenue_month": 15000,
+            "ods_returns": 10,
+            "accepts_recovery": true,
+            "last_default": "3 months if open",
+            "negative_days": {
+                "last_month": 7,
+                "previous_month": 10
+            },
+            "low_days": {
+                "last_month": 7,
+                "previous_month": 10
+            },
+            "bounced_mcas": {
+                "min": 4,
+                "max": 5
+            },
+            "restricted_industries": [
+                "Debt consolidation services",
+                "Other funding/Loan related institutions",
+                "Law firm"
+            ],
+            "start_date": "No",
+            "soleprop": "Yes"
+        },
+        "Citrus": {
+            "min_deposits": 3,
+            "avg_revenue": 20000,
+            "min_revenue_month": 15000,
+            "ods_returns": 10,
+            "accepts_recovery": true,
+            "last_default": "3 months if open",
+            "negative_days": 5,
+            "low_days": 5,
+            "bounced_mcas": {
+                "min": 4,
+                "max": 5
+            },
+            "restricted_industries": [
+                "Debt consolidation services",
+                "Other funding/Loan related institutions",
+                "Law firm"
+            ],
+            "start_date": "No",
+            "soleprop": "Yes"
+        }
+    },
+    "cashfloit_mendel_criteria": {
+        "funder_deposits": 4,
+        "default_negative_days": 4,
+        "low_days": 6,
+        "bounced_payments": 3,
+        "sole_proprietorship": "Only if it's a business account"
+    },
+    "fourth_month_review": {
+        "check": "balances"
+    },
+    "keywords": [
+        "Reversal",
+        "reverse",
+        "Returns",
+        "Returns/returned payments",
+        "Recovery",
+        "Nsf",
+        "insufficient funds",
+        "non sufficient",
+        "Reverse payments",
+        "Nomas",
+        "Rejected",
+        "Rejected payments",
+        "Supreme",
+        "Returned",
+        "Overdrafts",
+        "Overdrafts/OD nsf",
+        "IVY Overdraft",
+        "Overdrawn",
+        "Corporate Turnaround",
+        "Stop",
+        "NSFS",
+        "NSFs/NSF",
+        "Merel Recovery",
+        "Insufficient funds",
+        "Collection",
+        "Collection nonsufficient funds",
+        "Ram",
+        "Stop payments",
+        "Max",
+        "United debt",
+        "C2C",
+        "American collection systems",
+        "Triton",
+        "CCCS",
+        "CCS"
+    ],
+    "offer_check": {
+        "search": "dups"
+    },
+    "additional_criteria": {
+        "trucks_in_safer": {
+            "max_age": "4 months",
+            "new_york_rule": "Decline if last month is bad"
+        },
+        "ownership_requirement": {
+            "minimum_percentage": 50
+        },
+        "restricted_activities": [
+            "Gambling"
+        ],
+        "construction_businesses": {
+            "requirement": "Send AR (Accounts Receivable)"
+        },
+        "default_rules": {
+            "closed_default": {
+                "time_limit": "1 year"
+            },
+            "open_default": "Decline",
+            "closed_pending": "Offer with ZBL (Zero Balance Letter)"
+        },
+        "underwriting_rules": {
+            "minimum_response_time": "7 minutes",
+            "no_mca_history": "Decline",
+            "previous_funding_limit": {
+                "amount": 27000,
+                "action": "Decline if less than this amount"
+            },
+            "minimum_offer": 20000,
+            "active_reverse": "Decline"
+        }
+    },
+    "lender_specific_info": {
+        "ByzFunder": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Coconut": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Credibly / Retail": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Cucumber": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "EBF / Vader": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": "can be National Funding",
+            "link": null
+        },
+        "Fast Fund": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Flash Funding": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Fundova": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Gotorro Holdings": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": "TORRO/BRIDGEIT",
+            "link": null
+        },
+        "Greenbox / Merchant Capital": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Harper": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Kabbage": {
+            "loc": "Y",
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Lendini / FDM": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": "Funding Metrics",
+            "link": null
+        },
+        "Lndzi": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": "https://www.funderintel.com/fundingcompanieslist"
+        },
+        "MCA Servicing / Bitty": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "MONEYTREE": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": "LOAN",
+            "link": null
+        },
+        "Mr Advance": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Mulligan": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": "Finwise Bank",
+            "link": null
+        },
+        "National Funding": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": "NFAS2/NF1016",
+            "deposits": null,
+            "link": null
+        },
+        "Orange": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Rainbow": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": "oracle solutions",
+            "deposits": null,
+            "link": null
+        },
+        "Rapid/SBFS": {
+            "loc": "YES",
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Sofia Grey / E Financial": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Spartan": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Swift": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Tandem Advance": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "White Road": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Wise": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Wynwood": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        },
+        "Zinch": {
+            "loc": null,
+            "reverse": null,
+            "abbreviation": null,
+            "deposits": null,
+            "link": null
+        }
+    }
+}

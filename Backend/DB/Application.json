@@ -1,0 +1,152 @@
+{
+    "business_info": {
+      "legal_name": [
+        "BUSINESS LEGAL NAME (MUST CORRESPOND WITH IRS FILED NAME)",
+        "Legal Business Name",
+        "BUSINESS LEGAL NAME",
+        "What is the name of your business?",
+        "Business Legal Name"
+      ],
+      "dba_name": [
+        "DBA Name",
+        "BUSINESS DBA NAME",
+        "DBA",
+        "BUSINESS NAME (DBA)",
+        "DBA"
+      ],
+      "entity_type": [
+        "Structure",
+        "TYPE OF BUSINESS ENTITY",
+        "Business Legal Structure",
+        "Entity Type",
+        "Legal Entity"
+      ],
+      "industry": [
+        "Industry Description/SIC",
+        "Industry",
+        "Business Type"
+      ],
+      "start_date": [
+        "Business Start Date",
+        "BUSINESS START DATE",
+        "Date Business Opened",
+        "BUSINESS START DATE (MONTH/YEAR)",
+        "Business Start Date (MM/YYYY)"
+      ],
+      "address": [
+        "Street Address",
+        "BUSINESS STREET ADDRESS",
+        "Physical Address",
+        "MAILING/BILLING ADDRESS",
+        "Address"
+      ],
+      "city": [
+        "City"
+      ],
+      "state": [
+        "State"
+      ],
+      "zip": [
+        "ZIP CODE",
+        "Zip"
+      ],
+      "phone": [
+        "Business Phone Number",
+        "BUSINESS LOCATION PHONE #",
+        "Business Phone",
+        "PHONE NUMBER"
+      ],
+      "email": [
+        "e-mail",
+        "EMAIL",
+        "Email",
+        "EMAIL"
+      ],
+      "website": [
+        "Business Website",
+        "Website"
+      ],
+      "tax_id": [
+        "BUSINESS FEDERAL TAX ID #",
+        "Federal Tax ID",
+        "Tax ID (EIN)",
+        "EIN NUMBER"
+      ],
+      "annual_revenue": [
+        "GROSS ANNUAL SALES",
+        "Total Monthly Sales",
+        "AVERAGE MONTHLY SALES",
+        "Annual Business Revenue"
+      ]
+    },
+    "personal_info": {
+      "owner_name": [
+        "Owner First and Last Name",
+        "LEGAL FIRST NAME / LEGAL LAST NAME",
+        "FULL NAME",
+        "Name"
+      ],
+      "owner_address": [
+        "Street Address",
+        "HOME STREET ADDRESS",
+        "Home Address",
+        "ADDRESS",
+        "Home Address"
+      ],
+      "owner_city": [
+        "City",
+        "CITY",
+        "City",
+        "CITY",
+        "City"
+      ],
+      "owner_state": [
+        "State",
+        "STATE",
+        "State",
+        "STATE",
+        "State"
+      ],
+      "owner_zip": [
+        "Zip",
+        "ZIP",
+        "Zip",
+        "ZIP CODE",
+        "Zip"
+      ],
+      "ssn": [
+        "SSN",
+        "SSN",
+        "Social Security #",
+        "SSN",
+        "SSN"
+      ],
+      "dob": [
+        "DOB",
+        "DATE OF BIRTH",
+        "Date of Birth",
+        "DOB",
+        "Date of Birth"
+      ],
+      "phone": [
+        "Cell Phone",
+        "MOBILE PHONE #",
+        "Phone",
+        "MOBILE",
+        "Mobile"
+      ],
+      "email": [
+        "Email Address",
+        "EMAIL",
+        "Email",
+        "EMAIL",
+        "Email"
+      ],
+      "ownership_percentage": [
+        "Ownership %",
+        "Percent of Ownership",
+        "OWNERSHIP PERCENTAGE",
+        "Percent Ownership"
+      ]
+    }
+  }

@@ -1,0 +1,43 @@
+<div class="container" id="container">
+    <div class="form-container sign-up">
+        <form id="RegisterForm">
+            <h1>Create Account</h1>
+            {{> social-icons}}
+            <span>or use your email for registeration</span>
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="lastname" placeholder="Last Name">
+            <input type="tel" name="phone" placeholder="Phone">
+            <input type="email" name="username" placeholder="Email">
+            {{> password-input}}
+            <button>Sign Up</button>
+        </form>
+    </div>
+    <div class="form-container sign-in">
+        <form id="loginForm">
+            <div class="logo">
+                <img src="/images/logo-GLS-FONDO-GRIS-PNG.png" alt="Logo" class="logo-image">
+                <h1>Sign In</h1>
+            </div>
+            {{> social-icons}}
+            <span>or use your email password</span>
+            <input type="username" name="username" placeholder="Email">
+            {{> password-input}}
+            <a href="#">Forget Your Password?</a>
+            <button>Sign In</button>
+        </form>
+    </div>
+    <div class="toggle-container">
+        <div class="toggle">
+            <div class="toggle-panel toggle-left">
+                <h1>Welcome Back!</h1>
+                <p id="RegisterMessage">Enter your personal details to use all of site features</p>
+                <button class="hidden" id="login">Sign In</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Welcome, Friend!</h1>
+                <p id="LoginMessage">Enter your personal details to use all of site features</p>
+                <button class="hidden" id="register">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>

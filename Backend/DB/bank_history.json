@@ -1,0 +1,124 @@
+{
+  "bank_statement_info": {
+    "funder_deposits": [
+      "Number of funder deposits",
+      "Deposits from funders",
+      "MCA deposits"
+    ],
+    "revenue": {
+      "avg_monthly": [
+        "Average monthly revenue",
+        "Monthly average deposits",
+        "Average monthly deposits"
+      ],
+      "min_monthly": [
+        "Minimum monthly revenue",
+        "Lowest monthly deposits",
+        "Minimum monthly deposits"
+      ]
+    },
+    "overdrafts_returns": [
+      "Number of overdrafts and returns",
+      "Overdraft count",
+      "Returned item count"
+    ],
+    "recovery_last_month": [
+      "Recovery deposits in last month",
+      "Last month recovery activity"
+    ],
+    "default_negative_days": [
+      "Days with negative balance",
+      "Negative balance days"
+    ],
+    "low_days": [
+      "Days with low balance",
+      "Low balance days"
+    ],
+    "bounced_payments": [
+      "Number of bounced payments",
+      "Bounced payment count"
+    ],
+    "keywords": [
+      "Reversal",
+      "reverse",
+      "Returns",
+      "Recovery",
+      "Nsf",
+      "insufficient funds",
+      "Rejected",
+      "Overdrafts",
+      "Stop",
+      "Collection"
+    ]
+  },
+  "application_info": {
+    "business_state": [
+      "State of business",
+      "Business location state"
+    ],
+    "business_industry": [
+      "Business industry",
+      "Type of business"
+    ],
+    "business_start_date": [
+      "Business start date",
+      "Date business established"
+    ],
+    "business_structure": [
+      "Business structure",
+      "Entity type"
+    ],
+    "trucking_construction_remodeling": [
+      "Is business in trucking/construction/remodeling",
+      "Trucking or construction business"
+    ]
+  },
+  "additional_criteria": {
+    "trucks_in_safer": [
+      "Number of trucks in SAFER",
+      "SAFER truck count"
+    ],
+    "ownership_percentage": [
+      "Ownership percentage",
+      "Percent of ownership"
+    ],
+    "gambling_activity": [
+      "Any gambling activity",
+      "Gambling-related business"
+    ],
+    "construction_ar": [
+      "Construction business Accounts Receivable",
+      "AR for construction businesses"
+    ],
+    "default_history": [
+      "Default history",
+      "Previous defaults"
+    ],
+    "mca_history": [
+      "MCA history",
+      "Previous MCA funding"
+    ],
+    "previous_funding_amount": [
+      "Amount of previous funding",
+      "Last funding amount"
+    ],
+    "active_reverse": [
+      "Active reverse consolidation",
+      "Ongoing reverse consolidation"
+    ]
+  },
+  "lender_specific_info": {
+    "loc_availability": [
+      "Line of Credit availability",
+      "LOC offered"
+    ],
+    "reverse_consolidation": [
+      "Reverse consolidation option",
+      "Offers reverse consolidation"
+    ],
+    "deposit_method": [
+      "Deposit method or name",
+      "How deposits appear"
+    ]
+  }
+}

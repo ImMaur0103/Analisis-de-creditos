@@ -1,0 +1,89 @@
+:root {
+    --color-accent           : #4a90e2;
+    --color-accent-foreground: #2c3e50;
+    --color-card             : #ffffff;
+    --color-muted            : #f4f4f4;
+    --color-muted-foreground : #e0e0e0;
+}
+
+.main-container {
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    align-items    : flex-start;
+    justify-content: center;
+}
+
+.criteria-container {
+    background-color: var(--color-card);
+    border-radius   : 0.5rem;
+    box-shadow      : 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    max-width       : 56rem;
+    padding         : 2rem;
+    margin          : 1rem;
+    width           : 100%;
+    transition      : transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.criteria-container:hover {
+    transform : scale(1.05);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.criteria-title {
+    font-size    : 1.875rem;
+    font-weight  : bold;
+    margin-bottom: 1.5rem;
+}
+
+.criteria-list {
+    list-style-type: none;
+    padding        : 0;
+    margin         : 0;
+}
+
+.criteria-item {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    background-color: var(--color-muted);
+    border-radius   : 0.5rem;
+    margin-bottom   : 1.5rem;
+    padding         : 1.5rem;
+    transition      : transform 0.3s ease, background-color 0.3s ease;
+}
+
+.criteria-item:hover {
+    transform       : scale(1.05);
+    background-color: var(--color-light);
+}
+
+.criteria-name {
+    font-weight: 500;
+}
+
+.expand-button {
+    background-color: var(--color-secondary);
+    color           : var(--color-muted);
+    border          : none;
+    border-radius   : 0.5rem;
+    cursor          : pointer;
+    font-size       : 1rem;
+    padding         : 0.5rem 1.5rem;
+    transition      : background-color 0.3s ease;
+}
+
+.edit-button {
+    background-color: var(--color-secondary);
+    color           : var(--color-muted);
+    border          : none;
+    border-radius   : 0.5rem;
+    cursor          : pointer;
+    font-size       : 1rem;
+    padding         : 0.5rem 1.5rem;
+    transition      : background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: var(--color-primary);
+}

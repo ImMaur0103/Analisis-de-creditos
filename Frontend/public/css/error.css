@@ -1,0 +1,50 @@
+cssCopy:root {
+    --color-primary: #00e2ff;
+    --color-secondary: #3b92b0;
+    --color-dark: #2a2f3d;
+    --color-light: #c1c1c1;
+    --color-darkest: #212121;
+    --color-gray: #808080;
+    --color-brown: #b08c5b;
+    --color-green: #3caea3;
+    --color-blue-dark: #1f618d;
+}
+
+.error-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-image {
+    margin-bottom: 2rem;
+}
+
+.error-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    font-size: 1.125rem;
+    color: var(--color-gray);
+    margin-bottom: 1.5rem;
+}
+
+.home-button {
+    background-color: var(--color-primary);
+    color: var(--color-darkest);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: var(--color-secondary);
+}
